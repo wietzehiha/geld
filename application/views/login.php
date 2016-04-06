@@ -42,7 +42,10 @@
                     <h3 class="panel-title">Please Sign In</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
+                    <?php
+                        $attributes = array('class' => '', 'id' => 'myform');
+                        echo form_open('login/check', $attributes);
+                    ?>
                         <fieldset>
                             <div class="form-group">
                                 <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
